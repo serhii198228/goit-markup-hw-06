@@ -347,6 +347,9 @@ ul {
 }
 
 /*  form  */
+.modal-form-field {
+  padding-left: 5px;
+}
 .modal-headline {
   font-size: 20px;
   line-height: 1.1;
@@ -406,8 +409,6 @@ ul {
 
 /* checkbox */
 
-/* 
-
 .checkbox {
   transition: border var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
@@ -448,7 +449,7 @@ ul {
   background-position: center;
 } */
 
-.icon-check {
+.check-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,13 +461,14 @@ ul {
   fill: var(--white-bgc-text-color);
 }
 
-.checkbox:checked + .check-label .icon-check {
+.checkbox:checked + .check-label .check-icon {
   background: var(--accent-color);
   border: transparent;
-  transition: background-color var(--animation) var(--bezier);
+  transition: background-color var(--animation-duration-hw-05)
+    var(--bezier-hw-05);
 }
 
-/* .icon-check:hover,
+/* .check-icon:hover,
 .icon-check:focus {
   border: 2px solid var(--accent-color);
 } */
@@ -491,6 +493,47 @@ ul {
   color: var(--accent-color);
 }
 
+/* 
+.checkbox {
+  transition: border var(--animation-duration-hw-05) var(--bezier-hw-05);
+}
+
+.checkbox:checked + .checkbox-label::before {
+  background: var(--accent-color);
+  background-image: url(../images/icon-check-Vector.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ */
+
+.button-area {
+  display: flex;
+  justify-content: center;
+}
+
+.form-submit-button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-bgc-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  transition: background-color var(--animation) var(--bezier-hw-05);
+}
+
+.form-submit-button:hover,
+.form-submit-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
 /* Features WebStudio */
 
 .features {

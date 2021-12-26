@@ -86,7 +86,7 @@
           <ul class="features-list list">
             <li class="features-item icon-attention">
               <div class="icon-div-group">
-                <svg class="icon-group" width="70" yeidth="70">
+                <svg class="icon-group" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -98,7 +98,7 @@
             </li>
             <li class="features-item icon-punctuality">
               <div class="icon-div-group">
-                <svg class="icon-group" width="70" yeidth="70">
+                <svg class="icon-group" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -111,7 +111,7 @@
             </li>
             <li class="features-item icon-planning">
               <div class="icon-div-group">
-                <svg class="icon-group" width="70" yeidth="70">
+                <svg class="icon-group" width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -123,7 +123,7 @@
             </li>
             <li class="features-item icon-technologies">
               <div class="icon-div-group">
-                <svg class="icon-group" width="70" yeidth="70">
+                <svg class="icon-group" width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -447,7 +447,6 @@
             </ul>
           </address>
         </div>
-
         <div class="container-join">
           <p class="footerjoin-text">Присоединяйтесь</p>
           <ul class="footer-socialbar list">
@@ -481,29 +480,35 @@
             </li>
           </ul>
         </div>
+
+        <!-- Subscribe -->
+
         <div class="email-footer">
           <p class="footeremail-text">подпишись на рассылку</p>
-          <label class="subscribe">
-            <input
-              class="subscribe-input"
-              type="email"
-              name="subscribe-email"
-              placeholder="E-mail"
-            />
-          </label>
-          <button class="button-submit" type="submit">
-            Подписаться<svg class="icon-send">
-              <use
-                href="./images/sprite.svg#icon-icon-send"
-                width="24"
-                height="24"
-              ></use>
-            </svg>
-          </button>
+          <form autocomplete="on">
+            <label class="subscribe">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="subscribe-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="button-submit" type="submit">
+              Подписаться<svg class="icon-send">
+                <use
+                  href="./images/sprite.svg#icon-icon-send"
+                  width="24"
+                  height="24"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <!-- Modal window -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
@@ -521,7 +526,7 @@
             </svg>
           </label>
 
-          <label for="tel" class="form-input-box">
+          <label class="form-input-box">
             Телефон
             <input
               type="tel"
@@ -535,7 +540,7 @@
             </svg>
           </label>
 
-          <label for="mail" class="form-input-box">
+          <label class="form-input-box">
             Почта
             <input type="email" class="form-input" />
             <svg class="form-input-icon">
@@ -543,7 +548,7 @@
             </svg>
           </label>
 
-          <label for="name" class="form-input-box">
+          <label class="form-input-box">
             Комментарий
             <textarea
               name="user-msg"
@@ -552,18 +557,29 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-       <div class="modal-form-field" >
-                <input type="checkbox" id="check" name="policy" class="visually-hidden checkbox"> 
-                <label for="check" class="check-label">
-                    <span class="icon-check" >
-                        <svg class="checkbox-icon" width="11" height="8">
-                            <use href="./images/icons.svg#icon-icon-check-Vector"></use>
-                            </svg>
-                    </span>
-                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <span class="checkbox-text">
-                    <a class="checkbox-link" href="">Условия договора</a></span>
-            </div>
-          <button type="submit" class="form-submit-btn">отправить</button>
+          <div class="modal-form-box">
+            <input
+              type="checkbox"
+              id="check"
+              name="policy"
+              class="visually-hidden checkbox"
+            />
+            <label for="check" class="check-label">
+              <span class="check-icon">
+                <svg class="icon-checkbox" width="11" height="8">
+                  <use href="./images/icons.svg#icon-icon-check-Vector"></use>
+                </svg>
+              </span>
+              <span class="checkbox-text"
+                >Соглашаюсь с рассылкой и принимаю
+                <span class="checkbox-text"></span>
+                <a class="checkbox-link" href="">Условия договора</a></span
+              >
+            </label>
+          </div>
+          <div class="button-area">
+            <button type="submit" class="form-submit-button">Oтправить</button>
+          </div>
         </form>
       </div>
     </div>
