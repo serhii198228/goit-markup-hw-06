@@ -366,6 +366,7 @@ ul {
   margin-bottom: 20px;
   color: var(--primary-text-color);
   position: relative;
+  font-size: 12px;
 }
 .form-input,
 .form-massege {
@@ -378,9 +379,11 @@ ul {
   box-sizing: border-box;
   border-radius: 1px;
   padding: 0 10px 0 42px;
+  outline: none;
 }
 .form-input:focus,
-.form-input:hover {
+.form-input:hover,
+.form-massege:hover {
   border: 1px solid var(--accent-color);
 }
 .form-input:focus + svg,
